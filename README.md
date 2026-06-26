@@ -1,4 +1,37 @@
 # fluorescence-kinetics-analysis
-My first independent repository. It is focused on the analysis of fluorescence data obtained either algae or spianch extracted thylakoids.
-You will find the type of measure similar to what a DUAL-PAM would give you, albeit with some differences.
-The instrument itself is the one processeing the raw data. Below you will fin instructions for all the notebook in this branch.
+FLUORESCENCE KINETICS ANALYSIS PIPELINE
+
+Welcome to my first independent repository. This project is focused on the downstream analysis of fluorescence data obtained from either intact algae or spinach-extracted thylakoids.
+
+The measurement types are similar to standard DUAL-PAM outputs. The fluorometer natively processes the raw data, and the Python notebooks in this branch handle the kinetic visualisation, standard deviation calculations, and automated multi-panel grid generation.
+
+REPOSITORY CONTENTS
+
+YII_kinetic_pipeline.ipynb: The primary universal pipeline to parse traces and generate grids.
+
+data_templates/dummy_pam_data.xlsx: An anonymised dummy dataset to test the pipeline locally.
+
+MANDATORY DATA STRUCTURE
+For the script to work, your Excel column headers must follow this exact syntax with underscores: Organism_Condition_Replicate
+
+Examples:
+
+Chlamy_Control_1
+
+Chlamy_CD_500_mM_3
+
+SpeciesA_10_uM_2
+
+LOCAL EXECUTION
+
+Install the required libraries in your terminal by typing:
+pip install pandas openpyxl matplotlib seaborn notebook
+
+Download or clone this repository to your computer.
+
+Drop your exported Excel data file into the data_templates directory.
+
+Launch Jupyter Notebook in your terminal by typing:
+jupyter notebook
+
+Open YII_kinetic_pipeline.ipynb, change the EXCEL_FILE name at the top to match your file, and run the cells.
