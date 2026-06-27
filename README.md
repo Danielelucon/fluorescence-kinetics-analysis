@@ -9,7 +9,7 @@ REPOSITORY CONTENTS
 
 YII_kinetic_pipeline.ipynb: The primary universal pipeline to parse traces and generate grids.
 
-data_templates/dummy_pam_data.xlsx: An anonymised dummy dataset to test the pipeline locally.
+data_templates/dummy_ETR.xlsx: An anonymised dummy dataset to test the Y(II) pipeline locally.
 
 MANDATORY DATA STRUCTURE
 For the script to work, your Excel column headers must follow this exact syntax with underscores: Organism_Condition_Replicate
@@ -35,4 +35,4 @@ Drop your exported Excel data file into the data_templates directory.
 Launch Jupyter Notebook in your terminal by typing:
 jupyter notebook
 
-Open YII_kinetic_pipeline.ipynb, change the EXCEL_FILE name at the top to match your file, and run the cells.
+Open the notebook, change the EXCEL_FILE name at the top to match your file, and run the cells.
