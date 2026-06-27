@@ -1,4 +1,9 @@
 # fluorescence-kinetics-analysis
+
+#
+WORK IN PROGRESS
+#
+
 FLUORESCENCE KINETICS ANALYSIS PIPELINE
 
 Welcome to my first independent repository. This project is focused on the downstream analysis of fluorescence data obtained from either intact algae or spinach-extracted thylakoids.
