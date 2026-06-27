@@ -17,7 +17,7 @@ YII_kinetic_pipeline.ipynb: The primary universal pipeline to parse traces and g
 data_templates/dummy_ETR.xlsx: An anonymised dummy dataset to test the Y(II) pipeline locally.
 
 MANDATORY DATA STRUCTURE
-For the script to work, your Excel column headers must follow this exact syntax with underscores: Organism_Condition_Replicate
+For the script to work, your Excel column headers must follow this exact syntax with underscores: Species_Condition_Replicate
 
 Examples:
 
