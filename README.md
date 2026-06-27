@@ -1,7 +1,7 @@
 # fluorescence-kinetics-analysis
 
 #
-WORK IN PROGRESS
+WORK IN PROGRESS --> currently trying to devise a universal script for Y(II), NPQ and lightcurves
 #
 
 FLUORESCENCE KINETICS ANALYSIS PIPELINE
