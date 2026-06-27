@@ -25,7 +25,8 @@ SpeciesA_10_uM_2
 LOCAL EXECUTION
 
 Install the required libraries in your terminal by typing:
-pip install pandas openpyxl matplotlib seaborn notebook
+
+pip install numpy pandas matplotlib seaborn scipy statsmodels jupyter notebook openpyxl
 
 Download or clone this repository to your computer.
 
