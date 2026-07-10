@@ -31,8 +31,6 @@ pip install numpy pandas matplotlib seaborn scipy statsmodels jupyter notebook o
 
 Download or clone this repository to your computer.
 
-Drop your exported Excel data file into the data_templates directory.
-
 Launch Jupyter Notebook in your terminal by typing:
 jupyter notebook
 
