@@ -1,12 +1,8 @@
 # fluorescence-kinetics-analysis
 
-#
-WORK IN PROGRESS --> Tested for Y(II), working on ETR, NPQ and lightcurves
-#
-
 FLUORESCENCE KINETICS ANALYSIS PIPELINE
 
-Welcome to my first independent repository. This project is focused on the downstream analysis of fluorescence data obtained from either intact algae or spinach-extracted thylakoids.
+Welcome to my first independent repository. This project is focused on the downstream analysis of fluorescence data obtained from either intact algae or spinach-extracted thylakoids for a rapid processing and plotting
 
 The measurement types are similar to standard DUAL-PAM outputs. The fluorometer natively processes the raw data, and the Python notebooks in this branch handle the kinetic visualisation, standard deviation calculations, and automated multi-panel grid generation.
 
@@ -14,7 +10,7 @@ REPOSITORY CONTENTS
 
 YII_kinetic_pipeline.ipynb: The primary universal pipeline to parse traces and generate grids.
 
-data_templates/dummy_ETR.xlsx: An anonymised dummy dataset to test the Y(II) pipeline locally.
+dummy_ETR.xlsx: An anonymised dummy dataset to test the pipeline locally.
 
 MANDATORY DATA STRUCTURE
 For the script to work, your Excel column headers must follow this exact syntax with underscores: Species_Condition_Replicate
