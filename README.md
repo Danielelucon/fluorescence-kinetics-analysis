@@ -1,7 +1,7 @@
 # fluorescence-kinetics-analysis
 
 #
-WORK IN PROGRESS --> Tested for Y(II), working on ET, NPQ and lightcurves
+WORK IN PROGRESS --> Tested for Y(II), working on ETR, NPQ and lightcurves
 #
 
 FLUORESCENCE KINETICS ANALYSIS PIPELINE
