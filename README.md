@@ -1,38 +1,35 @@
-# fluorescence-kinetics-analysis
+# Fluorescence Kinetics Analysis
 
-FLUORESCENCE KINETICS ANALYSIS PIPELINE
+This repository provides a downstream analysis pipeline for fluorescence data obtained from intact algae or spinach-extracted thylakoids. 
 
-Welcome to my first independent repository. This project is focused on the downstream analysis of fluorescence data obtained from either intact algae or spinach-extracted thylakoids for a rapid processing and plotting
+The pipeline parses raw fluorometer outputs (similar to standard DUAL-PAM measurements), handles kinetic visualisation and standard deviation calculations, and automates multi-panel grid generation.
 
-The measurement types are similar to standard DUAL-PAM outputs. The fluorometer natively processes the raw data, and the Python notebooks in this branch handle the kinetic visualisation, standard deviation calculations, and automated multi-panel grid generation.
+## Repository Contents
 
-REPOSITORY CONTENTS:
+*   `YII_kinetic_pipeline.ipynb`: The primary Jupyter Notebook pipeline.
+*   `YII_kinetic_pipeline.py`: A standalone Python script version of the pipeline.
+*   `dummy_ETR.xlsx`: An anonymised dataset for local testing.
 
-YII_kinetic_pipeline.ipynb: The primary universal pipeline to parse traces and generate grids.
+## Mandatory Data Structure
 
-dummy_ETR.xlsx: An anonymised dummy dataset to test the pipeline locally.
+Your Excel column headers must follow this exact syntax: `Species_Condition_Replicate`.
 
-MANDATORY DATA STRUCTURE:
+**Examples:**
+*   `Chlamy_Control_1`
+*   `Chlamy_CD_500_mM_3`
+*   `SpeciesA_10_uM_2`
 
-For the script to work, your Excel column headers must follow this exact syntax with underscores: Species_Condition_Replicate
+## Local Execution
 
-Examples:
+### 1. Install Dependencies
+Install the required libraries via your terminal:
+`pip install numpy pandas matplotlib openpyxl`
 
-Chlamy_Control_1
+### 2. Run the Code
+**Option A: Using standard Python**
+Open `YII_kinetic_pipeline.py` in your preferred IDE, update the `EXCEL_FILE` and sheet name variables at the top of the script, and execute.
 
-Chlamy_CD_500_mM_3
-
-SpeciesA_10_uM_2
-
-LOCAL EXECUTION
-
-Install the required libraries in your terminal by typing:
-
-pip install numpy pandas matplotlib seaborn scipy statsmodels jupyter notebook openpyxl
-
-Download or clone this repository to your computer.
-
-Launch Jupyter Notebook in your terminal by typing:
-jupyter notebook
-
-Open the notebook, change the EXCEL_FILE name at the top to match your file, and run the cells.
+**Option B: Using Jupyter Notebook**
+Launch the notebook environment from your terminal:
+`jupyter notebook`
+Open `YII_kinetic_pipeline.ipynb`, modify the `EXCEL_FILE` and sheet name in the first cell, and run the notebook.
